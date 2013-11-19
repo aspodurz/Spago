@@ -2,9 +2,9 @@
 */bin/*
 .project
 .classpath
-*/.stteings/*
 # Package Files #
 *.jar
 *.war
 *.ear
 /.settings
+/bin

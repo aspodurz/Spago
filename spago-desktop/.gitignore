@@ -2,8 +2,9 @@
 */bin/*
 .project
 .classpath
-*/.stteings/*
 # Package Files #
 *.jar
 *.war
 *.ear
+/bin
+/dest
