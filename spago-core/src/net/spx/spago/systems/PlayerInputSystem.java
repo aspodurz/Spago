@@ -37,8 +37,9 @@ public class PlayerInputSystem extends EntityProcessingSystem implements
 	private OrthographicCamera camera;
 	private Vector3 mouseVector;
 
+	@SuppressWarnings({ "unchecked" })
 	public PlayerInputSystem(OrthographicCamera camera) {
-		super(Aspect.getAspectFor(Position.class, Velocity.class, Player.class));
+		super(Aspect.getAspectForAll(Position.class, Velocity.class, Player.class));
 		this.camera = camera;
 		this.mouseVector = new Vector3();
 	}

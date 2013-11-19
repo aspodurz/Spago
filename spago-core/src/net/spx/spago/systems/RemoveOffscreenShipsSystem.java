@@ -17,6 +17,7 @@ public class RemoveOffscreenShipsSystem extends IntervalEntityProcessingSystem {
 	@Mapper ComponentMapper<Position> pm;
 	@Mapper ComponentMapper<Bounds> bm;
 
+	@SuppressWarnings("unchecked")
 	public RemoveOffscreenShipsSystem() {
 		super(Aspect.getAspectForAll(Velocity.class, Position.class, Health.class, Bounds.class).exclude(Player.class), 5);
 	}

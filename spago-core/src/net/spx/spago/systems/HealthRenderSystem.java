@@ -25,8 +25,9 @@ public class HealthRenderSystem extends EntityProcessingSystem {
 	private OrthographicCamera camera;
 	private BitmapFont font;
 	
+	@SuppressWarnings("unchecked")
 	public HealthRenderSystem(OrthographicCamera camera) {
-		super(Aspect.getAspectFor(Position.class, Health.class));
+		super(Aspect.getAspectForAll(Position.class, Health.class));
 		this.camera = camera;
 	}
 	

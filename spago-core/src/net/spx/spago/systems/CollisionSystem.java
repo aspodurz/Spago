@@ -23,6 +23,7 @@ public class CollisionSystem extends EntitySystem {
 	
 	private Bag<CollisionPair> collisionPairs;
 
+	@SuppressWarnings({ "unchecked", "deprecation" })
 	public CollisionSystem() {
 		super(Aspect.getAspectFor(Position.class, Bounds.class));
 	}

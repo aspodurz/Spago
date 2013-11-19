@@ -15,8 +15,9 @@ public class ScaleAnimationSystem extends EntityProcessingSystem {
 	@Mapper
 	ComponentMapper<Sprite> sm;
 
+	@SuppressWarnings("unchecked")
 	public ScaleAnimationSystem() {
-		super(Aspect.getAspectFor(ScaleAnimation.class));
+		super(Aspect.getAspectForAll(ScaleAnimation.class));
 	}
 
 	@Override

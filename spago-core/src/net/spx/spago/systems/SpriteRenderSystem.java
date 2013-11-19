@@ -41,6 +41,7 @@ public class SpriteRenderSystem extends EntitySystem {
 	private Bag<AtlasRegion> regionsByEntity;
 	private List<Entity> sortedEntities;
 
+	@SuppressWarnings("unchecked")
 	public SpriteRenderSystem(OrthographicCamera camera) {
 		super(Aspect.getAspectForAll(Position.class, Sprite.class));
 		this.camera = camera;
