@@ -1,10 +1,10 @@
+/.settings
+/bin
 *.class
-*/bin/*
 .project
 .classpath
 # Package Files #
 *.jar
 *.war
 *.ear
-/.settings
-/bin
+
